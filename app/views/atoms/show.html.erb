@@ -1,0 +1,8 @@
+<%= link_to '‹', new_atoms_path, class: 'back-arrow' %>
+
+<h2 class="result"><%= convert_atoms(@atoms, @moles) %></h2>
+
+<div class="explanation">
+  <h3 class="flush">How’d we get this?</h3>
+  <%= atom_conversion_explanation @atoms, @moles %>
+</div>

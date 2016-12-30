@@ -1,0 +1,17 @@
+<%= link_to '‹', root_path, class: 'back-arrow' %>
+
+<main>
+  <%= form_tag controller: 'temperatures', action: 'create', method: 'post' do %>
+    <label class="field">
+      celsius
+      <input type="number" name="celsius" class="field__input--text">
+    </label>
+
+    <label class=field>
+      Kelvin
+      <input type="number" name="kelvin" class="field__input--text">
+    </label>
+
+    <button type="submit" class="button">Convert</button>
+  <% end %>
+</main>

@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html,
+ body {
+   font-size: 16px;
+   font-family: 'calluna sans', 'lucida grande', sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+
+ * {
+   box-sizing: border-box;
+ }
+
+ h1 { margin: 0; }
+
+ a {
+  text-decoration: none;
+  color: darkblue;
+ }
+
+ .masthead {
+  background: skyblue;
+  color: darkblue;
+  padding: 1em;
+  text-align: center;
+ }
+
+ .container {
+   padding: 0 1em;
+ }
+
+ .logo {
+  font-size: 1em;
+  text-transform: uppercase;
+ }
+
+ .back-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2.5em;
+  padding: 0 0.4em;
+ }
+
+ .field {
+  display: block;
+  margin: 1em 0;
+ }
+
+ .field__input--text {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+
+ }
+
+ .button {
+  display: block;
+  width: 100%;
+  background: darkblue;
+  border: 1px solid darkblue;
+  border-bottom: 2px solid darken(darkblue,10%);
+  border-radius: 4px;
+  color: white;
+  padding: 1em 1.5em;
+ }
+
+.list--ruled-actions {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+
+  .list__action {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+    margin: 0 -1em;
+  }
+}
+
+.result {
+  text-align: center;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+.explanation {
+  text-align: center;
+}
+
+.flush {
+  margin: 0;
+}
